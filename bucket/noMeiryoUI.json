@@ -12,10 +12,7 @@
             "noMeiryoUI"
         ]
     ],
-    "checkver": {
-        "url": "https://geekuninstaller.com/download",
-        "regex": "<b>([\\d.]+)"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://geekuninstaller.com/geek.zip"
     }
