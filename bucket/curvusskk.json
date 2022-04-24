@@ -1,0 +1,24 @@
+{
+    "version": "3.1.3",
+    "description": "Japanese skk like IME.",
+    "homepage": "https://github.com/nathancorvussolis/corvusskk",
+    "checkver": "github",
+    "license": "MS-PL",
+    "url": "https://github.com/nathancorvussolis/corvusskk/releases/download/3.1.3/corvusskk-3.1.3.exe#/setup.exe",
+    "hash": "467419de6ad9406aa84d8deec28042b7661207e848fa69e606eeaf27018d9979",
+    "installer": {
+        "file": "setup.exe",
+        "args": "/quiet",
+        "keep": "true"
+    },
+    "uninstaller": {
+        "file": "setup.exe",
+        "args": [
+            "/uninstall",
+            "/quiet"
+        ]
+    },
+    "autoupdate": {
+        "url": "https://github.com/nathancorvussolis/corvusskk/releases/download/$version/corvusskk-$version.exe#/setup.exe"
+    }
+}
