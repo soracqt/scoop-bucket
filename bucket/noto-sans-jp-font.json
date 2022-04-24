@@ -1,10 +1,10 @@
 {
     "version": "2017.10.25",
-    "description": "Noto sans serif display font",
+    "description": "Noto Sans JP is an unmodulated (“sans serif”) design for the Japanese language and other languages used in Japan. It covers Hiragana, Katakana and Kanji. It also supports Latin, Cyrillic, Greek and Hangul. It has multiple weights. ",
     "homepage": "https://www.google.com/get/noto/",
     "license": "OFL-1.1",
     "notes": "Hash for version 2017.10.25 is\n    1e1759a5698e44ea4d3ae869f595bd9051b193b4ea2582f3ad4d217baeae3f0c",
-    "url": "https://fonts.google.com/download?family=Noto%20Sans%20JP",
+    "url": "https://noto-website-2.storage.googleapis.com/pkgs/NotoSansJP.zip",
     "pre_install": [
         "#Access denied error running: Remove-Item \"$env:windir/fonts/NotoSansJP*.otf\" -recurse"
     ],
@@ -13,6 +13,6 @@
         "dir \"$dir/*.otf\" | %{ $fonts.CopyHere($_.fullname) }"
     ],
     "autoupdate": {
-        "url": "https://fonts.google.com/download?family=Noto%20Sans%20JP"
+        "url": "https://noto-website-2.storage.googleapis.com/pkgs/NotoSansJP.zip"
     }
 }
