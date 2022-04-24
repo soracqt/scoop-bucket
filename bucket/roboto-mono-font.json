@@ -9,7 +9,7 @@
     ],
     "post_install": [
         "$fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)",
-        "dir \"$dir/*.ttf\" | %{ $fonts.CopyHere($_.fullname) }"
+        "dir \"$dir/static/*.ttf\" | %{ $fonts.CopyHere($_.fullname) }"
     ],
     "autoupdate": {
         "url": "https://fonts.google.com/download?family=Roboto%20Mono#/dl.7z"
