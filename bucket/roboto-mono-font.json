@@ -9,7 +9,7 @@
     ],
     "post_install": [
         "$fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)",
-        "dir \"$dir/RobotoMono-main/*.ttf\" | %{ $fonts.CopyHere($_.fullname) }"
+        "dir \"$dir/RobotoMono-main/fonts/ttf/*.ttf\" | %{ $fonts.CopyHere($_.fullname) }"
     ],
     "autoupdate": {
         "url": "https://github.com/googlefonts/RobotoMono/archive/refs/heads/main.zip"
