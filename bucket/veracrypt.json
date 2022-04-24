@@ -25,7 +25,6 @@
             "VeraCryptExpander"
         ]
     ],
-    "persist": "Configuration.xml",
     "checkver": {
         "url": "https://www.veracrypt.fr/en/Downloads.html",
         "regex": "Latest Stable Release\\s*-\\s*(\\d+(\\.\\d+)*)"
