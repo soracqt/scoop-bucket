@@ -1,0 +1,18 @@
+{
+    "version": "2017.10.25",
+    "description": "Noto sans serif display font",
+    "homepage": "https://www.google.com/get/noto/",
+    "license": "OFL-1.1",
+    "notes": "Hash for version 2017.10.25 is\n    1e1759a5698e44ea4d3ae869f595bd9051b193b4ea2582f3ad4d217baeae3f0c",
+    "url": "https://fonts.google.com/download?family=Noto%20Sans%20JP",
+    "pre_install": [
+        "#Access denied error running: Remove-Item \"$env:windir/fonts/NotoSansJP*.otf\" -recurse"
+    ],
+    "post_install": [
+        "$fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)",
+        "dir \"$dir/*.otf\" | %{ $fonts.CopyHere($_.fullname) }"
+    ],
+    "autoupdate": {
+        "url": "https://fonts.google.com/download?family=Noto%20Sans%20JP"
+    }
+}
