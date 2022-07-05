@@ -9,7 +9,7 @@
     ],
     "post_install": [
         "$fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)",
-        "dir \"$dir/IBM-Plex-Sans-JP/unhinted/*.otf\" | %{ $fonts.CopyHere($_.fullname) }"
+        "dir \"$dir/OpenType/IBM-Plex-Sans-JP/unhinted/*.otf\" | %{ $fonts.CopyHere($_.fullname) }"
     ],
     "checkver": "github",
     "autoupdate": {
